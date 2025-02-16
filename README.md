@@ -13,3 +13,17 @@ git commit -m "first commit"
 6. Commit de agregado titulo
 git add index.html
 git commit -m "Agregado título"
+8. Usar git log y guardar el hash del primer commit en log_com.txt
+git log --oneline
+echo "Primer commit hash: fcef088" > log_com.txt
+9. Crear la rama "estilos"
+git branch estilos
+git checkout estilos
+10. Añadir styles.css y darle estilos al titulo
+11. Modificar index.html para enlazar styles.css
+12. Commit de agregado css
+git add .
+git commit -m "Agregado CSS"
+13. Fusionar estilos en main
+git checkout main
+git merge estilos
