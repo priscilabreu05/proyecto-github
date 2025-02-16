@@ -27,3 +27,10 @@ git commit -m "Agregado CSS"
 13. Fusionar estilos en main
 git checkout main
 git merge estilos
+15. Usar git reset para eliminar el último commit SIN PERDER ARCHIVOS
+git reset --soft HEAD~1
+16. Explicar en log_com.txt qué comando se utilizó y por qué
+17. Usar git checkout para ver cómo era el proyecto en el commit cuyo hash se guardó en log_com.txt
+git checkout fcef088
+18. Volver a la última versión con git checkout main
+git checkout main
